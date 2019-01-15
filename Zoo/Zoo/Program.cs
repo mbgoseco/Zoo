@@ -1,5 +1,6 @@
 ﻿using System;
 using Zoo.Classes;
+using Zoo.Interfaces;
 
 namespace Zoo
 {
@@ -16,7 +17,13 @@ namespace Zoo
             Console.WriteLine(yogi.BearHug());
             Console.WriteLine(yogi.GuestFeedAnimal());
 
+            Console.WriteLine();
+
             // Tiger instance
+            Tiger tony = new Tiger();
+            Console.WriteLine(tony.Feed());
+            Console.WriteLine(tony.StaffFeedAnimal());
+            Console.WriteLine(tony.Swim());
         }
     }
 }

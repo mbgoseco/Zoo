@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Zoo.Classes
 {
-    class Alligator : Reptiles
+    public class Alligator : Reptiles
     {
         public override int AnimalCount { get; set; } = 6;
         public override bool LaysEggs { get; set; } = true;

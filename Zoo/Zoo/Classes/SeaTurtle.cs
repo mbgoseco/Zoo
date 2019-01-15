@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Zoo.Interfaces;
 
 namespace Zoo.Classes
 {
-    public class SeaTurtle : Turtle
+    public class SeaTurtle : Turtle, IFeed, ISwim
     {
         public override int AnimalCount { get; set; } = 5;
         public override bool LivesInWater { get; set; } = true;
@@ -32,6 +33,16 @@ namespace Zoo.Classes
         public override string Speak()
         {
             return "...*gurgle*.";
+        }
+
+        public string Feed()
+        {
+            return "The sea turtles are hungry! Feed them!";
+        }
+
+        public string Swim()
+        {
+            return "I'm a sea turtle and I can swim!";
         }
     }
 }

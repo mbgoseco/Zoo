@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Zoo.Interfaces;
 
 namespace Zoo.Classes
 {
-    public class KingCobra : Reptiles
+    public class KingCobra : Reptiles, IFeed
     {
         public override int AnimalCount { get; set; } = 3;
         public override bool LaysEggs { get; set; } = true;
@@ -29,6 +30,11 @@ namespace Zoo.Classes
         public override string Speak()
         {
             return "Hssssssssssssssssssss.";
+        }
+
+        public string Feed()
+        {
+            return "The cobras are hungry! Feed them!";
         }
     }
 }

@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Zoo.Interfaces;
 
 namespace Zoo.Classes
 {
-    public class BrownBear : Bear
+    public class BrownBear : Bear, IFeed, ISwim
     {
         public override int AnimalCount { get; set; } = 2;
         public override string FurColor { get; set; } = "brown";
@@ -27,6 +28,16 @@ namespace Zoo.Classes
         public override string BearHug()
         {
             return "BROWN BEAR HUG!!!";
+        }
+
+        public string Feed()
+        {
+            return "The brown bears are hungry! Feed them!";
+        }
+
+        public string Swim()
+        {
+            return "I'm a brown bear and I can swim!";
         }
     }
 }

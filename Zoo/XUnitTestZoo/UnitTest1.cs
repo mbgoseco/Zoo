@@ -8,9 +8,12 @@ namespace XUnitTestZoo
     public class UnitTest1
     {
         [Fact]
-        public void Test1()
+        public void TigerCanSpeakAndEat()
         {
+            Tiger tony = new Tiger();
 
+            Assert.Equal("Raaaaawr! Meow.", tony.Speak());
+            Assert.Equal("Employees are feeding the tigers.", tony.StaffFeedAnimal());
         }
     }
 }

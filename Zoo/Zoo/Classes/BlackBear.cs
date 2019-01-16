@@ -37,7 +37,7 @@ namespace Zoo.Classes
 
         public string Swim()
         {
-            return "I'm a black bears and I can swim!";
+            return "I'm a black bear and I can swim!";
         }
     }
 }

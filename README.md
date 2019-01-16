@@ -17,18 +17,18 @@ Here some definitions and examples of the principals of OOP in use within this a
 ## Interfaces
 An interface is a set of properties, methods, events, or indexers that can be implemented by multiple classes. They work similar to abstract class, however a class can only inherit a single abstract class, whereas a class can inherit multiple interfaces. Our Zoo uses two interfaces:
 
-- IFeed
+IFeed
  - Members: string Feed();
  - Used by class: Tiger, BrownBear, BlackBear, Platypus, Alligator, SeaTurtle, BoxTurtle, KingCobra
 
-- ISwim
+ISwim
  - Members: string Swim();
  - Used by class: Tiger, BrownBear, BlackBear, Platypus, Alligator, SeaTurtle
 
 These interfaces were designed to be accessed by concrete class or object that can swim and/or get hungry. 
 
 ## Diagram
-![diagram]()
+![diagram](https://github.com/mbgoseco/Zoo/blob/master/assets/ZooDiagram.png)
 
 ## Examples
-![screenhot]()
+![screenhot](https://github.com/mbgoseco/Zoo/blob/master/assets/ZooScreenshot.PNG)
